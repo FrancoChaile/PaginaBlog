@@ -1,0 +1,24 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  } 
+
+.nav-link:hover {
+ transform: scale(1.15);
+ }
+ .logo {
+  width: 100px;
+  height: 100px;
+ }
+.carousel {
+  padding-top: 30px;
+}
+
+.slide img {
+  height: 65vh;
+}
+
+.containerContactos {
+  margin-top: 100px;
+}
