@@ -10,70 +10,156 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body style="background-color: #faf0e4">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-1 fixed-top">
+        <div class="container-fluid bg-light">
+          <a href="./index.html">
+            <img src="./img/logo2.png" alt="logo" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-around"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-semibold" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-semibold" href="#"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-semibold" href="./contacto.html"
+                  >Contactos</a
+                >
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  data-bs-whatever="@mdo"
+                >
+                  Suscribite
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Suscribite y no te pierdas nada
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Nombre y Apellido</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-email" class="col-form-label"
+                    >Correo electrónico</label
+                  >
+                  <input type="email" class="form-control" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer d-grid col-6 mx-auto">
+              <button type="button" class="btn btn-primary">Suscribirme</button>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <section class="container">
-      <div class="p-3 col">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                New message
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Recipient:</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label"
+                    >Message:</label
+                  >
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="Main-top">
+    <section class="container d-flex justify-content-center">
+      <div class="col">
         <a
           href=""
           class="p-3 fw-bold link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
@@ -99,7 +185,7 @@
     <div class="container">
       <h2 class="p-4 fs-4 fw-bolder">Tips Para Viajar</h2>
       <div class="row text-center">
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/paisaje.webp"
@@ -123,7 +209,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/Europa.jpg"
@@ -147,7 +233,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/Europa Primavera.avif"
@@ -171,7 +257,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/Pasaporte.jpg"
@@ -195,7 +281,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/amsterdan.webp"
@@ -219,7 +305,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/dubrovnik.jpg"
@@ -243,7 +329,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/Vuelo.jpg"
@@ -267,7 +353,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/Bucarest.jpg"
@@ -291,7 +377,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/lisbon.jpeg"
@@ -315,7 +401,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/Italia.jpg"
@@ -339,7 +425,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/vuelos baratos.jpg"
@@ -363,7 +449,7 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-4 col-md-6 p-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 p-3 d-flex justify-content-center">
             <div class="card h-100" style="width: 250px; height: 300px">
               <img
                 src="./img/Imprevistos.webp"
@@ -428,6 +514,74 @@
         </div>
       </div>
     </div>
+  </main>
+  <footer>
+    <div class="row container-fluid p-0 m-0 mt-5">
+      <div
+        class="col-sm-4 p-0 d-flex justify-content-center align-items-center"
+      >
+        <img src="./img/logo2.png" alt="" height="100px" width="100px" />
+      </div>
+      <div class="col-sm-4 p-0">
+        <div>
+          <div class="card-body">
+            <h4 class="card-title text-center pb-2">
+              Seguinos en Nuestras Redes
+            </h4>
+            <div class="d-flex justify-content-evenly pb-2">
+              <div>
+                <a href=""
+                  ><img
+                    src="./img/icons8-facebook-50.png"
+                    alt=""
+                    height="50px"
+                    width="50px"
+                /></a>
+              </div>
+              <div>
+                <a href=""
+                  ><img
+                    src="./img/icons8-instagram-50.png"
+                    alt=""
+                    height="50px"
+                    width="50px"
+                /></a>
+              </div>
+              <div>
+                <a href=""
+                  ><img
+                    src="./img/icons8-twitter-circled-50.png"
+                    alt=""
+                    height="50px"
+                    width="50px"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 p-0">
+        <div>
+          <div class="card-body">
+            <h4 class="card-title pb-2">Soporte</h4>
+            <div>
+              <ul>
+                <a href="" class="text-dark text-decoration-none"
+                  ><li>Preguntas Frecuentes</li></a
+                >
+                <a href="" class="text-dark text-decoration-none"
+                  ><li>Politicas de Privacidad</li></a
+                >
+                <a href="" class="text-dark text-decoration-none"
+                  ><li>Terminos y Condiciones</li></a
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
