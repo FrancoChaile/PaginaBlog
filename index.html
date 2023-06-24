@@ -1,61 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary p-1 fixed-top">
         <div class="container-fluid bg-light">
           <a href="./index.html">
-          <img src="./img/logo2.png" alt="logo" class="logo">
-        </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./img/logo2.png" alt="logo" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-around"
+            id="navbarNav"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link text-dark fw-semibold" href="#">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark fw-semibold" href="#">Acerca de nosotros</a>
+                <a class="nav-link text-dark fw-semibold" href="#"
+                  >Acerca de nosotros</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark fw-semibold" href="./contacto.html">Contactos</a>
+                <a class="nav-link text-dark fw-semibold" href="./contacto.html"
+                  >Contactos</a
+                >
               </li>
               <li>
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                  data-bs-whatever="@mdo">Suscribite</button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  data-bs-whatever="@mdo"
+                >
+                  Suscribite
+                </button>
               </li>
             </ul>
           </div>
         </div>
-  
-       
-  
       </nav>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Suscribite y no te pierdas nada</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Suscribite y no te pierdas nada
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <form>
                 <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Nombre y Apellido</label>
-                  <input type="text" class="form-control" id="recipient-name">
+                  <label for="recipient-name" class="col-form-label"
+                    >Nombre y Apellido</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
                 </div>
                 <div class="mb-3">
-                  <label for="recipient-email" class="col-form-label">Correo electrónico</label>
-                  <input type="email" class="form-control">
+                  <label for="recipient-email" class="col-form-label"
+                    >Correo electrónico</label
+                  >
+                  <input type="email" class="form-control" />
                 </div>
               </form>
             </div>
@@ -65,100 +105,161 @@
           </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                New message
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
               <form>
                 <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Recipient:</label>
-                  <input type="text" class="form-control" id="recipient-name">
+                  <label for="recipient-name" class="col-form-label"
+                    >Recipient:</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
                 </div>
                 <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Message:</label>
+                  <label for="message-text" class="col-form-label"
+                    >Message:</label
+                  >
                   <textarea class="form-control" id="message-text"></textarea>
                 </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Send message</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Send message
+              </button>
             </div>
           </div>
         </div>
       </div>
-
     </header>
     <main>
       <h1>BIENVENIDOS</h1>
 
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner carousel-fade">
-        <div class="carousel-item active">
-          <img src="./img/slide1.jpg" class="d-block w-100" alt="fotoslide1">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="fw-bold">Viví viajando</h1>
-          </div>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-        <div class="carousel-item">
-          <img src="./img/slide2.jpg" class="d-block w-100" alt="fotoslide2">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="fw-bold">Viajá a través de nosotros</h1>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/slide6.jpg" class="d-block w-100" alt="fotoslide3">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="fw-bold">La vida es un viaje y quien viaja vive dos veces</h1>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <div class="container row">
-              <div class="col-lg-6 h-25">
-                <img
-                  class="h-10 w-100 pt-4 rounded-5 rounded-top-0"
-                  src="./img/Coliseo Romano.jpg"
-                  alt="Coliseo Romano"
-                />
-              </div>
-              <div class="col-lg-6">
-                <h3 class="pt-4">Coliseo Romano</h3>
-                <p>
-                  El Coliseo romano es un anfiteatro edificado durante el
-                  Imperio romano entre los años 70 y 80 d.C. por orden de Tito
-                  Flavio Vespasiano. Por esta razón, fue conocido en su época
-                  como Anfiteatro Flavio. El Coliseo se ubica en la ciudad de
-                  Roma, Italia, hacia el Este del Foro romano, y se emplaza en
-                  un terreno plano, lo que constituye una novedad constructiva
-                  en esta tipología de edificios.
-                </p>
-              </div>
+        <div class="carousel-inner carousel-fade">
+          <div class="carousel-item active">
+            <img
+              src="./img/slide1.jpg"
+              class="d-block w-100"
+              alt="fotoslide1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="fw-bold">Viví viajando</h1>
             </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/slide2.jpg"
+              class="d-block w-100"
+              alt="fotoslide2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="fw-bold">Viajá a través de nosotros</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/slide6.jpg"
+              class="d-block w-100"
+              alt="fotoslide3"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="fw-bold">
+                La vida es un viaje y quien viaja vive dos veces
+              </h1>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="container">
+          <div class="container row">
+            <div class="col-lg-6 h-25">
+              <img
+                class="h-50 w-100 pt-4 rounded-5 rounded-top-0"
+                src="./img/Coliseo Romano.jpg"
+                alt="Coliseo Romano"
+              />
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <h3 class="pt-4">Coliseo Romano</h3>
+              <p>
+                El Coliseo romano es un anfiteatro edificado durante el
+                Imperio romano entre los años 70 y 80 d.C. por orden de Tito
+                Flavio Vespasiano. Por esta razón, fue conocido en su época
+                como Anfiteatro Flavio. El Coliseo se ubica en la ciudad de
+                Roma, Italia, hacia el Este del Foro romano, y se emplaza en
+                un terreno plano, lo que constituye una novedad constructiva
+                en esta tipología de edificios.
+              </p>
+            </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-md-9">
             <p class="p-2 fs-5 m-1 fw-medium">Descubre Viajes</p>
             <p class="p-2 m-1 fw-medium">Ultimas Entradas</p>
             <div class="row justify-content-center">
@@ -374,8 +475,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <form class="d-flex p-2 m-2 text-center" role="search">
+          <div class="col-xl-3 col-md-3 text-center mt-5 pt-5">
+            <form class="d-flex p-2 m-2" role="search">
               <input
                 class="form-control me-1"
                 type="search"
@@ -438,7 +539,7 @@
                 class="list-group-item list-group-item-action text-center"
                 >Oceania</a
               >
-              <div class="pt-5 text-center d-none d-sm-block">
+              <div class="pt-5 text-center d-none d-md-block">
                 <img
                   src="./img/Publicidad.jpg"
                   alt="Publcidad"
@@ -451,44 +552,76 @@
       </div>
     </main>
     <footer>
-        <div class="row container-fluid p-0 m-0 mt-5">
-            <div class="col-sm-4 p-0 d-flex justify-content-center align-items-center">
-                <img src="./img/logo2.png" alt="" height="100px" width="100px">
-            </div>
-            <div class="col-sm-4 p-0">
-              <div>
-                <div class="card-body">
-                  <h4 class="card-title text-center pb-2">Seguinos en Nuestras Redes</h4>
-                  <div class="d-flex justify-content-evenly pb-2">
-                    <div>
-                        <a href=""><img src="./img/icons8-facebook-50.png" alt="" height="50px" width="50px"></a>
-                    </div>
-                    <div>
-                        <a href=""><img src="./img/icons8-instagram-50.png" alt="" height="50px" width="50px"></a>
-                    </div>
-                    <div>
-                        <a href=""><img src="./img/icons8-twitter-circled-50.png" alt="" height="50px" width="50px"></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 p-0">
-              <div>
-                <div class="card-body">
-                  <h4 class="card-title pb-2">Soporte</h4>
-                  <div>
-                    <ul>
-                     <a href="" class="text-dark text-decoration-none"><li>Preguntas Frecuentes</li></a>
-                     <a href="" class="text-dark text-decoration-none"><li>Politicas de Privacidad</li></a>
-                     <a href="" class="text-dark text-decoration-none"><li>Terminos y Condiciones</li></a>
-                    </ul>
-                  </div>                
-                </div>
-              </div>
-            </div>
+      <div class="row container-fluid p-0 m-0 mt-5">
+        <div
+          class="col-sm-4 p-0 d-flex justify-content-center align-items-center"
+        >
+          <img src="./img/logo2.png" alt="" height="100px" width="100px" />
         </div>
+        <div class="col-sm-4 p-0">
+          <div>
+            <div class="card-body">
+              <h4 class="card-title text-center pb-2">
+                Seguinos en Nuestras Redes
+              </h4>
+              <div class="d-flex justify-content-evenly pb-2">
+                <div>
+                  <a href=""
+                    ><img
+                      src="./img/icons8-facebook-50.png"
+                      alt=""
+                      height="50px"
+                      width="50px"
+                  /></a>
+                </div>
+                <div>
+                  <a href=""
+                    ><img
+                      src="./img/icons8-instagram-50.png"
+                      alt=""
+                      height="50px"
+                      width="50px"
+                  /></a>
+                </div>
+                <div>
+                  <a href=""
+                    ><img
+                      src="./img/icons8-twitter-circled-50.png"
+                      alt=""
+                      height="50px"
+                      width="50px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-0">
+          <div>
+            <div class="card-body">
+              <h4 class="card-title pb-2">Soporte</h4>
+              <div>
+                <ul>
+                  <a href="" class="text-dark text-decoration-none"
+                    ><li>Preguntas Frecuentes</li></a
+                  >
+                  <a href="" class="text-dark text-decoration-none"
+                    ><li>Politicas de Privacidad</li></a
+                  >
+                  <a href="" class="text-dark text-decoration-none"
+                    ><li>Terminos y Condiciones</li></a
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
