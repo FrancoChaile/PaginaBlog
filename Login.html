@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-1 fixed-top">
             <div class="container-fluid bg-light">
               <a href="./index.html">
-              <img src="./img/logo nuevo.png" alt="logo" class="logo">
+              <img src="./img/logo2.png" alt="logo" class="logo">
             </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,71 +95,137 @@
           </div>
     </header>
     <main>
-        <div class="row mt-5">
-            <div class="col-12 col-lg-6 p-3">
-                <h2 class="text-center mb-3">Crear nueva cuenta</h2>
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Direccion de Correo Electronico</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div class="row mt-5">
+        <div class="col-12 col-lg-6 p-3">
+          <h2 class="text-center mb-3">Crear nueva cuenta</h2>
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Direccion de Correo Electronico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Confirmar Contraseña</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Ingresar con</label
+              >
+              <a href=""><img src="./img/icons8-facebook-50.png" alt="" /></a>
+              <a href=""><img src="./img/icons8-google-50.png" alt="" /></a>
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary">
+                Crear Cuenta
+              </button>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn btn-light"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModa2"
+                data-bs-whatever="@mdo"
+              >
+                Olvidé mi Contraseña
+              </button>
+
+              <div
+                class="modal fade"
+                id="exampleModa2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabe2"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabe2">
+                        Olvidaste tu Contraseña?
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Confirmar Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Ingresar con</label>
-                        <a href=""><img src="./img/icons8-facebook-50.png" alt=""></a>
-                        <a href=""><img src="./img/icons8-google-50.png" alt=""></a>
-                    </div>
-                    <div class="mb-3">
-                        <button type="submit" class="btn btn-primary">Crear Cuenta</button>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModa2" data-bs-whatever="@mdo">Olvidé mi Contraseña</button>
-                        
-                        <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabe2">Olvidaste tu Contraseña?</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                <form>
-                                  <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Introduzca su direccion de correo electronico a continuacion le enviaremos un e-mail con un enlace para restablecer tu contraseña.</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
-                                  </div>
-                                  
-                                </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary">Enviar e-mail</button>
-                              </div>
-                            </div>
-                          </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label"
+                            >Introduzca su direccion de correo electronico a
+                            continuacion le enviaremos un e-mail con un enlace
+                            para restablecer tu contraseña.</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail2"
+                            aria-describedby="emailHelp"
+                          />
                         </div>
-                        <a href="./index.html">
-                          <button type="button" class="btn btn-light"  data-bs-target="index">Volver</button>
-                        </a>
+                      </form>
                     </div>
-                </form>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Enviar e-mail
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="./index.html">
+                <button
+                  type="button"
+                  class="btn btn-light"
+                  data-bs-target="index"
+                >
+                  Volver
+                </button>
+              </a>
             </div>
-            <div class="col-12 col-lg-6 px-3 ">
-                <img src="./img/viaje-pic.jpg" alt="" class="img-fluid h-100">
-            </div>
+          </form>
         </div>
+        <div class="col-12 col-lg-6 px-3">
+          <img src="./img/viaje-pic.jpg" alt="" class="img-fluid h-100" />
+        </div>
+      </div>
     </main>
     <footer>
         <div class="row container-fluid p-0 m-0 mt-5">
             <div class="col-sm-4 p-0 d-flex justify-content-center align-items-center">
-                <img src="./img/logo nuevo.png" alt="" height="100px" width="100px">
+                <img src="./img/logo2.png" alt="" height="100px" width="100px">
             </div>
             <div class="col-sm-4 p-0">
               <div>
@@ -190,6 +261,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
