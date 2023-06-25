@@ -31,3 +31,14 @@
 .main-principal{
   margin-top: 300px;
 }
+
+  
+.cardImg {
+  border-style: none;
+}
+
+.cardImg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 2s;
+}
