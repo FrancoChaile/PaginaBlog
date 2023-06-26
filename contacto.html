@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
+<body style="background-color: #D9C6BA;">
   <header>
     <nav class="navbar navbar-expand-lg p-1 fixed-top">
       <div class="container-fluid">
@@ -25,10 +25,10 @@
         <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-dark fw-semibold" href="./Login.html">Login</a>
+              <a class="nav-link text-dark fw-semibold" href="#">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark fw-semibold" href="./Acerca de nosotros.html">Acerca de nosotros</a>
+              <a class="nav-link text-dark fw-semibold" href="#">Acerca de nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark fw-semibold" href="./contacto.html">Contactos</a>
@@ -96,26 +96,27 @@
 
   </header>
   <main>
-    <div class="row contactos">
-      <h1 class="text-center">Contactanos</h1>
+
+    <div class="containerContactos">
+      <h1 class="text-center py-3">Contactanos</h1>
       <div class="row py-3">
-        <div class="col-sm-12 col-lg-6 px-5">
-          <img src="./img/ImgMapa3.webp" alt="ubicación" class="img-fluid w-100 h-100">
+        <div class="col-md-5 col-lg-6">
+          <img src="./img/ubicación.jpg" alt="ubicación" class="img-fluid w-100 h-100">
           </div>
         
-          <div class="col-12 col-lg-6 px-5">
+          <div class="col md-5 lg-6">
             <form action="">
-            <div class="">
+            <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-              <input type="name" class="form-control w-100" id="exampleFormControlInput1" ">
+              <input type="name" class="form-control w-50" id="exampleFormControlInput1" ">
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="name@example.com">
+              <input type="email" class="form-control w-50" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
-              <textarea class="form-control w-100" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea class="form-control w-50" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="mb-3">
               <button type="submit" class="btn btn-primary">Enviar</button>
