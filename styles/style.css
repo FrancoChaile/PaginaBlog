@@ -5,6 +5,15 @@
   font-family: 'Fira Sans', sans-serif;
   } 
 
+  .navbar {
+    background-color:  #F2E7DC;
+  }
+  
+footer  {
+ 
+  background-color: #F2E7DC
+}
+
 .nav-link:hover {
  transform: scale(1.15);
  }
@@ -68,4 +77,5 @@
   height: 100%;
   border-radius: 100%;
 }
+
 
