@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acerca de nosotros</title>
+    <!-- CSS only -->
     <link rel="icon" href="/img/icono de avion.jpg" type="image/x-icon" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -17,12 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
-    <title>Login</title>
   </head>
+
   <body style="background-color: #d9c6ba">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary p-1 fixed-top">
-        <div class="container-fluid bg-light">
+      <nav class="navbar navbar-expand-lg p-1 fixed-top">
+        <div class="container-fluid">
           <a href="./index.html">
             <img src="./img/logo nuevo.png" alt="logo" class="logo" />
           </a>
@@ -43,10 +45,10 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-dark fw-semibold" href="#">Login</a>
+                <a class="nav-link text-dark fw-semibold" href="./Login.html">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark fw-semibold" href="#"
+                <a class="nav-link text-dark fw-semibold" href="./Acerca de nosotros.html"
                   >Acerca de nosotros</a
                 >
               </li>
@@ -164,140 +166,75 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="row login px-5">
-        <div class="col-12 col-lg-6 p-3">
-          <h1 class="text-center mb-3">Crear nueva cuenta</h1>
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Direccion de Correo Electronico</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Contraseña</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Confirmar Contraseña</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Ingresar con</label
-              >
-              <a href=""><img src="./img/icons8-facebook-50.png" alt="" /></a>
-              <a href=""><img src="./img/icons8-google-50.png" alt="" /></a>
-            </div>
-            <div class="mb-3">
-              <button type="submit" class="btn btn-primary">
-                Crear Cuenta
-              </button>
-            </div>
-            <div>
-              <button
-                type="button"
-                class="btn btn-light"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModa2"
-                data-bs-whatever="@mdo"
-              >
-                Olvidé mi Contraseña
-              </button>
 
-              <div
-                class="modal fade"
-                id="exampleModa2"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabe2"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabe2">
-                        Olvidaste tu Contraseña?
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="mb-3">
-                          <label for="recipient-name" class="col-form-label"
-                            >Introduzca su direccion de correo electronico a
-                            continuacion le enviaremos un e-mail con un enlace
-                            para restablecer tu contraseña.</label
-                          >
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail2"
-                            aria-describedby="emailHelp"
-                          />
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Cerrar
-                      </button>
-                      <button type="button" class="btn btn-primary">
-                        Enviar e-mail
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a href="./index.html">
-                <button
-                  type="button"
-                  class="btn btn-light"
-                  data-bs-target="index"
-                >
-                  Volver
-                </button>
-              </a>
-            </div>
-          </form>
+    <main>
+      <div class="container nosotros p-3" style="background-color: #f2e7dc">
+        <div class="info text-black p-2">
+          <h1 class="text-center">¿Quiénes somos?</h1>
+          <p class="text-center">
+            Somos Bruno, Franco, Sofi, Abel y Lautaro. Tucumanos. Viajeros.
+            Diferentes entre sí, en distintos momentos de la vida y con
+            distintos gustos y aspiraciones. Nos une un gran cariño, nos une el
+            trabajo y un ansia de viajar que, si bien palpita de distinta manera
+            en cada uno de nosotros, nos resulta irrefrenable por igual. Y
+            también nos une la intención de «contagiar» estas ansias que nos
+            incitan a movernos, a vivir otros lugares, a ser un poco «otros» y
+            así ir completando, de a poquito, la mejor versión posible de
+            nosotros mismos. Diferentes, Unión, Compartir. Podríamos decir que
+            allí reside la esencia de este blog.
+          </p>
         </div>
-        <div class="col-12 col-lg-6 px-3">
-          <img src="./img/viaje-pic.jpg" alt="" class="img-fluid h-100" />
+        <div class="row justify-content-evenly">
+          <div class="container Circulo col-12 mb-5">
+            <img
+              src="./img/AvatarBruno.webp"
+              alt="AvatarBruno"
+              class="avatar"
+            />
+            <p class="text-black fw-bold text-center mt-1">Bruno casavalle</p>
+          </div>
+          <div class="container Circulo col-12 mb-5">
+            <img
+              src="./img/AvatarFranco.webp"
+              alt="AvatarBruno"
+              class="avatar"
+            />
+            <p class="text-black fw-bold text-center mt-1">Franco Chaile</p>
+          </div>
+          <div class="container Circulo col-12 mb-5">
+            <img
+              src="./img/Avatar Sofi.webp"
+              alt="AvatarBruno"
+              class="avatar"
+            />
+            <p class="text-black fw-bold text-center mt-1">Sofía Haiquel</p>
+          </div>
+          <div class="container Circulo col-12 mb-5">
+            <img src="./img/AvatarAbel.webp" alt="AvatarBruno" class="avatar" />
+            <p class="text-black fw-bold text-center mt-1">Abel Acosta</p>
+          </div>
+          <div class="container Circulo col-12 mb-5">
+            <img
+              src="./img/AvatarLautaro.webp"
+              alt="AvatarBruno"
+              class="avatar"
+            />
+            <p class="text-black fw-bold text-center mt-1">Lautaro Sosa</p>
+          </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="row container-fluid p-0 m-0 mt-5">
+      <div class="row container-fluid pt-3 m-0 mt-5">
         <div
           class="col-sm-4 p-0 d-flex justify-content-center align-items-center"
         >
-          <img src="./img/logo nuevo.png" alt="" height="100px" width="100px" />
+          <img
+            src="./img/logo nuevo.png"
+            alt="logo"
+            height="100px"
+            width="100px"
+          />
         </div>
         <div class="col-sm-4 p-0">
           <div>
@@ -307,53 +244,72 @@
               </h4>
               <div class="d-flex justify-content-evenly pb-2">
                 <div>
-                  <a href=""
+                  <a href="./Error 404.html"
                     ><img
                       src="./img/icons8-facebook-50.png"
-                      alt=""
+                      alt="imgFace"
                       height="50px"
                       width="50px"
                   /></a>
                 </div>
                 <div>
-                  <a href=""
+                  <a href="./Error 404.html"
                     ><img
                       src="./img/icons8-instagram-50.png"
-                      alt=""
+                      alt="imgInsta"
                       height="50px"
                       width="50px"
                   /></a>
                 </div>
                 <div>
-                  <a href=""
+                  <a href="./Error 404.html"
                     ><img
                       src="./img/icons8-twitter-circled-50.png"
-                      alt=""
+                      alt="imgtwitter"
                       height="50px"
                       width="50px"
                   /></a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 p-0">
+          </div>
+        </div>
+        <div class="col-sm-4 p-0">
+          <div>
+            <div class="card-body">
+              <h4 class="card-title pb-2">Soporte</h4>
               <div>
-                <div class="card-body">
-                  <h4 class="card-title pb-2">Soporte</h4>
-                  <div>
-                    <ul>
-                     <a href="" class="text-dark text-decoration-none"><li>Preguntas Frecuentes</li></a>
-                     <a href="" class="text-dark text-decoration-none"><li>Politicas de Privacidad</li></a>
-                     <a href="" class="text-dark text-decoration-none"><li>Terminos y Condiciones</li></a>
-                    </ul>
-                  </div>                
-                </div>
+                <ul>
+                  <a
+                    href="./Error 404.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <li>Preguntas Frecuentes</li>
+                  </a>
+                  <a
+                    href="./Error 404.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <li>Politicas de Privacidad</li>
+                  </a>
+                  <a
+                    href="./Error 404.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <li>Terminos y Condiciones</li>
+                  </a>
+                </ul>
               </div>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
   </body>
