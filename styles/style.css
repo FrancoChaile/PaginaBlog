@@ -2,16 +2,28 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Fira Sans', sans-serif;
   } 
 
   .navbar {
-    background-color:  #F2E7DC;
+    background-color:  #698E9C;
+    font-family: 'Open Sans', sans-serif;
   }
   
 footer  {
- 
-  background-color: #F2E7DC
+ background-color: #698E9C;
+ font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-family: 'Caveat', cursive;
+}
+
+.bienvenidos {
+  margin-top: 150px;
+  color: #698E9C;
 }
 
 .nav-link:hover {
@@ -31,7 +43,7 @@ footer  {
   height: 65vh;
 }
 
-.contactos {
+.Contactos {
   margin-top: 150px;
 }
 
